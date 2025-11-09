@@ -4,6 +4,7 @@ import pandas as pd
 import re
 import nltk
 from nltk.corpus import stopwords
+nltk.download('stopwords')
 
 # Text cleaning function
 
@@ -70,3 +71,4 @@ if st.button("Predict Ad Engagement"):
 
 st.markdown("---")
 st.caption("Developed by Najma Razzaq & Abdullah")
+
