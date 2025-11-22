@@ -2,3 +2,4 @@ streamlit
 nltk
 google-generativeai
 scikit-learn
+python-dotenv
