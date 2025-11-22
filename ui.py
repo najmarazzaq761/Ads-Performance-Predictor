@@ -5,6 +5,8 @@ import re
 import nltk
 from nltk.corpus import stopwords
 import google.generativeai as genai # type: ignore
+from dotenv import load_dotenv
+import os
 
 nltk.download('stopwords')
 
@@ -29,8 +31,9 @@ with open("ads_predictor.pkl", "rb") as f:
 
 
 # 3. Configure Gemini API
-
-genai.configure(api_key="AIzaSyCg1n4N-PwOvv0HhcfLqBl45k7QS2r83BM")
+load_dotenv()
+GOOGLE_API_KEY = os.getenv("API_KEY")
+genai.configure(api_key=GOOGLE_API_KEY)
 
 def get_gemini_suggestions(caption, engagement_score):
     prompt = f"""
