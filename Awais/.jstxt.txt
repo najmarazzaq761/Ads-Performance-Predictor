@@ -1,0 +1,14 @@
+word vs keyword
+var and const
+hoisting (variable declaration , initialization) (undefined-existence ha but value nhi , defined-existence hi nhi ha)
+types in js (primitives(no change in both variables), reference(change in both variables)-(),[], {} )
+conditionals
+loops(for,while)
+functions
+arrays
+
+
+
+
+
+  
